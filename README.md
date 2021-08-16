@@ -30,7 +30,8 @@ npm run server
 
 ```
 
-- You can check its working by going to `localhost:7000/photos` in Postman or Chrome
+- You can check to make sure it is working by going to `localhost:7000/photos` in Postman or Chrome
+    - IF getting a 501 error, make sure the .env file has been saved & attempt to restart the server and hit the localhost endpoint in postman again 
 
 ## Run the Frontend
 

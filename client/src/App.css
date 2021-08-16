@@ -1,3 +1,4 @@
+  
 form {
 	margin: 1rem 0 1rem 0;
 	display: grid;
@@ -6,50 +7,49 @@ form {
 
 @media only screen and (min-width: 960px) {
 	form {
-		grid-template-columns: 5fr 1fr 1fr;
+		grid-template-columns: 5fr .5fr .5fr;
 	}
 }
 
-form input {
-	padding: 14px;
-	border: 3px solid rgb(225, 225, 225);
-	border-radius: 10px;
-	box-sizing: border-box;
-	font-size: 32px;
+.image-class {
+  width: 100%; /* can set this to 100% now becaue its inside a grid and we want the image to take up 100% of the column its in*/
+  height: 100%;
+  /* this makes sure the image isn't distorted or stretched into a fit*/
+  object-fit: cover;
 }
 
-form button {
-	border: none;
-	border-radius: 10px;
-	font-size: 32px;
-	padding: 16px;
+.image-grid{
+  display: grid;
+  gap: .5rem; 
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 
-form button[type='button'] {
-	background-color: rgb(254, 80, 80);
+.button-div{
+  margin: 20px;
+  text-align: center;
 }
 
-img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.load-more-button {
+  padding: 5px;
 }
 
-.image-grid {
-	display: grid;
-	gap: 0.5rem;
-	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+form input{
+  padding: 14px;
+  border: 3px solid rgb(225,225,225);
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
 }
 
-.footer {
-	display: flex;
-	justify-content: center;
+form button{
+  border: none;
+  border-radius: 10px;
+  font-size: 20px; 
+  padding: 16px;
 }
 
-.footer button {
-	font-size: 36px;
-	border-radius: 10px;
-	border: none;
-	padding: 18px;
-	margin: 3rem 0 3rem 0;
+form button[type="button"]
+{
+  background-color: rgb(254,80,80);
 }
+
